@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI-B02 CSS Repository</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at bottom, #000428, #004e92);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .stars:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+            animation: starfield 200s linear infinite;
+        }
+
+        @keyframes starfield {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            padding: 50px;
+            margin: 0 auto;
+            max-width: 700px;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 15px;
+            z-index: 1;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.9);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #00e6e6;
+            text-shadow: 0 0 15px rgba(0, 230, 230, 0.7), 0 0 25px rgba(0, 230, 230, 0.5);
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: #00e6e6;
+            transition: color 0.3s ease-in-out;
+            text-shadow: 0 0 15px rgba(0, 230, 230, 0.7), 0 0 25px rgba(0, 230, 230, 0.5);
+        }
+
+        h1 a:hover {
+            color: #33ffff;
+            text-shadow: 0 0 20px rgba(51, 255, 255, 0.8), 0 0 30px rgba(51, 255, 255, 0.6);
+        }
+
+        p {
+            font-size: 1.4em;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #b0e0e6;
+            text-shadow: 0 0 10px rgba(176, 224, 230, 0.5);
+        }
+
+        p span {
+            font-weight: bold;
+            color: #00ced1;
+            text-shadow: 0 0 15px rgba(0, 206, 209, 0.7);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background: #007d8c;
+            background: linear-gradient(to right, #00b3b3, #007d8c);
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 206, 209, 0.4);
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(to right, #33cccc, #0099a6);
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <h1><a href="https://github.com/2303a51105/HCI-B02" target="_blank">Welcome to the HCI-B02 Repository</a></h1>
+        <p>This repository is dedicated to storing <span>CSS files</span> for the <span>HCI-B02 course</span>. Here, you will find all the necessary styles and resources to support your Human Computer Interface projects.</p>
+        <p>Feel free to explore the repository and make use of the CSS files provided.</p>
+        <a href="https://github.com/2303a51105/HCI-B02" target="_blank" class="cta-button">Visit the GitHub Repository</a>
+    </div>
+</body>
+</html>
