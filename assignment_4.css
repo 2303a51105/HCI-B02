@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +47,24 @@ h2 {
     margin-bottom: 5px;
     color: #bbb;
 }
+
+.gender-options {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gender-options label {
+    vertical-align: middle;
+}
+
+.form-group label[for="gender"] {
+    display: inline-block;
+    margin-right: 10px;
+    color: #bbb;
+    vertical-align: middle;
+}
+
 
 input[type="text"],
 input[type="email"],
